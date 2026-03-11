@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
       console.log("Session ID:", session.id);
       console.log("Customer ID:", session.customer);
       console.log("Email client:", session.customer_details?.email);
-      console.log("Montant:", session.amount_total / 100, session.currency?.toUpperCase());
+      console.log("Montant:", session.amount_total ? session.amount_total / 100 : 0, session.currency?.toUpperCase());
       console.log("Clerk user ID (metadata):", session.metadata?.clerkUserId);
       console.log("====================================");
       break;
