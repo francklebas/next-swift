@@ -1,13 +1,21 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <header className="border-b">
         <div className="container flex h-16 items-center justify-between">
-          <h1 className="text-2xl font-bold">NextSwift Starter</h1>
+          <div className="relative h-10 w-40">
+            <Image
+              src="/nextswift.png"
+              alt="NextSwift Starter"
+              fill
+              className="object-contain"
+            />
+          </div>
           <div className="flex gap-4">
             <Button variant="ghost" asChild>
               <a href="/sign-in">Login</a>
