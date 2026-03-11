@@ -53,7 +53,7 @@ export default function Home() {
             </Card>
 
             {/* Full – highlighted */}
-            <Card className="border-primary shadow-lg relative">
+            <Card className="border-primary shadow-lg relative overflow-visible">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <Badge variant="default" className="px-4 py-1 text-sm">
                   Most popular
