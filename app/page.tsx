@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-3">
             {/* Basic */}
-            <Card>
+            <Card className="flex flex-col justify-between">
               <CardHeader>
                 <CardTitle>Basic</CardTitle>
                 <CardDescription>Quick testing & learning</CardDescription>
@@ -53,7 +53,7 @@ export default function Home() {
             </Card>
 
             {/* Full – highlighted */}
-            <Card className="border-primary shadow-lg relative overflow-visible">
+            <Card className="flex flex-col justify-between border-primary shadow-lg relative overflow-visible">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <Badge variant="default" className="px-4 py-1 text-sm">
                   Most popular
@@ -81,7 +81,7 @@ export default function Home() {
             </Card>
 
             {/* Pro */}
-            <Card>
+            <Card className="flex flex-col justify-between">
               <CardHeader>
                 <CardTitle>Pro</CardTitle>
                 <CardDescription>Lifetime updates & support</CardDescription>
