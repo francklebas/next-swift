@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <header className="border-b">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="relative h-10 w-40">
             <Image
               src="/nextswift.png"
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="container py-20">
+      <main className="container mx-auto py-20 px-4">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-6 text-5xl font-bold tracking-tight">
             Launch Your SaaS in Hours, Not Weeks
