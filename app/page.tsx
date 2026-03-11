@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckoutButton } from '@/components/checkout-button';
+import { Badge } from '@/components/ui/badge';
 
 export default function Home() {
   return (
@@ -29,26 +29,39 @@ export default function Home() {
           </p>
 
           <div className="grid gap-8 md:grid-cols-3">
+            {/* Basic */}
             <Card>
               <CardHeader>
                 <CardTitle>Basic</CardTitle>
-                <CardDescription>For quick tests</CardDescription>
+                <CardDescription>Quick testing & learning</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-4xl font-bold">€39</p>
                 <p className="text-sm text-muted-foreground">one-time</p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant="outline" asChild>
-                  <a href="/sign-in">Buy Basic</a>
+                <Button variant="outline" className="w-full" asChild>
+                  <a
+                    href="https://YOUR_USERNAME.gumroad.com/l/nextswift-basic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Buy Basic
+                  </a>
                 </Button>
               </CardFooter>
             </Card>
 
-            <Card className="border-primary shadow-lg">
+            {/* Full – highlighted */}
+            <Card className="border-primary shadow-lg relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <Badge variant="default" className="px-4 py-1 text-sm">
+                  Most popular
+                </Badge>
+              </div>
               <CardHeader>
                 <CardTitle>Full</CardTitle>
-                <CardDescription>Best value</CardDescription>
+                <CardDescription>Best value – ready to monetize</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-4xl font-bold">€69</p>
@@ -56,23 +69,39 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <Button className="w-full" asChild>
-                  <a href="/sign-in">Buy Full</a>
+                  <a
+                    href="https://YOUR_USERNAME.gumroad.com/l/nextswift-full"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Buy Full
+                  </a>
                 </Button>
               </CardFooter>
             </Card>
 
+            {/* Pro */}
             <Card>
               <CardHeader>
                 <CardTitle>Pro</CardTitle>
-                <CardDescription>Lifetime updates</CardDescription>
+                <CardDescription>Lifetime updates & support</CardDescription>
+                <Badge variant="secondary" className="mt-2">
+                  Lifetime
+                </Badge>
               </CardHeader>
               <CardContent>
                 <p className="text-4xl font-bold">€99</p>
                 <p className="text-sm text-muted-foreground">one-time</p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant="outline" asChild>
-                  <a href="/sign-in">Buy Pro</a>
+                <Button variant="outline" className="w-full" asChild>
+                  <a
+                    href="https://YOUR_USERNAME.gumroad.com/l/nextswift-pro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Buy Pro
+                  </a>
                 </Button>
               </CardFooter>
             </Card>
