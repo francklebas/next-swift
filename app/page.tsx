@@ -25,7 +25,7 @@ export default function Home() {
             Launch Your SaaS in Hours, Not Weeks
           </h2>
           <p className="mb-10 text-xl text-muted-foreground">
-            Next.js 15 • TypeScript • Clerk Auth • Supabase • Stripe • shadcn/ui
+            Next.js 16 • TypeScript • Clerk Auth • Supabase • Stripe • shadcn/ui
           </p>
 
           <div className="grid gap-8 md:grid-cols-3">
