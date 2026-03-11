@@ -42,7 +42,7 @@ export default function Home() {
               <CardFooter>
                 <Button variant="outline" className="w-full" asChild>
                   <a
-                    href="https://YOUR_USERNAME.gumroad.com/l/nextswift-basic"
+                    href={process.env.NEXT_PUBLIC_GUMROAD_URL_BASIC || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -70,7 +70,7 @@ export default function Home() {
               <CardFooter>
                 <Button className="w-full" asChild>
                   <a
-                    href="https://YOUR_USERNAME.gumroad.com/l/nextswift-full"
+                    href={process.env.NEXT_PUBLIC_GUMROAD_URL_FULL || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -96,7 +96,7 @@ export default function Home() {
               <CardFooter>
                 <Button variant="outline" className="w-full" asChild>
                   <a
-                    href="https://YOUR_USERNAME.gumroad.com/l/nextswift-pro"
+                    href={process.env.NEXT_PUBLIC_GUMROAD_URL_PRO || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
